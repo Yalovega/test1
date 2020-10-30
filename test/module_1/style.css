@@ -1,0 +1,41 @@
+body {
+  background: black;
+}
+a {
+  text-decoration: none;
+}
+.photo {
+  border-bottom: 10px solid orange;
+  width: 350px;
+  left: 0;
+  right: 0 auto;
+  margin: 0 auto;
+}
+.text {
+  font-size: 50px;
+  color: rgb(245, 181, 6);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.text1 {
+  color: orange;
+  font-size: 70px;
+}
+
+.text-title {
+  color: red;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.content {
+  margin: 50px;
+  border: top 5px orange;
+}
+
+.otfit {
+  border-bottom: 1px solid orange;
+}
