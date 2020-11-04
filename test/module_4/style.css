@@ -133,10 +133,11 @@ img {
   padding: 14px 40px;
   border-radius: 5px;
   border: 0;
+  text-align: center;
 
   cursor: pointer;
 
-  font-size: 13px;
+  font-size: 23px;
   font-family: "Raleway", sans-serif;
   color: #fff;
   font-weight: 600;
@@ -144,6 +145,11 @@ img {
   text-decoration: none;
 
   transition: background 0.1s linear;
+}
+
+.btn--long {
+  min-width: 280px;
+  height: 60px;
 }
 
 .btn--red {
@@ -230,18 +236,83 @@ img {
 }
 
 .separator__box {
+  height: 200px;
   width: 100%;
-  background-color: #e84545;
-}
-
-.separator__text {
+  /* background-color: #3a3e64; */
+  background: #31344e url("img/wesley-tingey-AZtMXheXnWc-unsplash.png") center
+    no-repeat;
+  background-size: cover;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+.separator__text {
+  /* /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+.separator__text__box {
+  border: 2px solid #cdcdcd;
+  border-radius: 2px;
+}
+
 h1 {
-  padding: auto 10px;
+  padding: 20px 20px;
+  border: 2px solid #cdcdcd;
+  border-radius: 2px;
   font-size: 40px;
   text-transform: uppercase;
   color: whitesmoke;
+}
+
+/*    Download    
+===============================  */
+
+.download {
+  margin: 90px 0;
+  text-align: center;
+}
+
+.download__title {
+  font-size: 28px;
+  color: #2d3033;
+  font-weight: 300;
+}
+
+.download__text {
+  margin: 30px 0;
+  font-size: 13px;
+  color: #2d3033;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer {
+  padding: 70px 0;
+  background-color: #3a3e64;
+}
+
+.footer__iner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__block {
+  width: 33.33333%;
+  text-align: center;
+}
+
+.footer__titile {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.footer__address {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
 }
