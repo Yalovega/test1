@@ -76,6 +76,7 @@ img {
   text-decoration: none;
   opacity: 75%;
   transition: opacity 0.2s linear;
+  font-size: 18px;
 }
 
 .nav__link:first-child {
