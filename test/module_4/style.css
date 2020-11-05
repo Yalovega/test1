@@ -248,12 +248,6 @@ img {
   align-items: center;
 }
 
-.separator__text {
-  /* /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
-
 .separator__text__box {
   border: 2px solid #cdcdcd;
   border-radius: 2px;
@@ -306,6 +300,8 @@ h1 {
 }
 
 .footer__titile {
+  margin-bottom: 10px;
+
   font-size: 24px;
   font-weight: 700;
   color: #fff;
@@ -313,6 +309,28 @@ h1 {
 }
 
 .footer__address {
+  font-style: normal;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__icon {
+  margin: 0 auto;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.footer__icon:hover {
+  transform: scale(1.5);
+}
+
+.footer__icon__box {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 18px;
+  text-transform: uppercase;
 }
