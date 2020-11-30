@@ -1,91 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Suez+One");
+
 * {
-  box-sizing: border-box;
-}
-a {
-  text-decoration: none;
-  display: inline-block;
-}
-ul,
-li {
-  list-style: none;
   margin: 0;
   padding: 0;
+  outline: none;
 }
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 15px;
+
+body,
+html {
+  width: 100%;
+  height: 100%;
 }
 
 body {
-  font-family: "PT Serif", serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  color: #5e5e5e;
+  background-color: #468;
+  font-family: Trebuchet MS, Helvetica;
 }
+
+/* Шапка сайта */
 
 header {
-  font-family: "Roboto", sans-serif;
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%;
+  background: transparent;
+  float: left;
+  position: fixed;
 }
 
-.header__top {
-  background-color: #303030;
+header #logo {
+  color: #fff;
+  cursor: pointer;
 }
 
-.header__btn {
-  float: right;
-  line-height: 36px;
-  color: #1b1b1b;
-  background-color: #ffc222;
-  padding: 5px 20px 4px 50px;
-  font-size: 16px;
-}
-
-.header__contacts:after {
-  content: "";
-  clear: both;
-  display: block;
-}
-
-.header__phone,
-.header__email {
-  color: #cbcacb;
-  letter-spacing: 0.25px;
+header #logo span {
+  font-size: 1.7em;
   line-height: 45px;
-}
-.header__phone {
-  padding-left: 20px;
-  padding-right: 30px;
-}
-.header__email {
-  padding-left: 24px;
-}
-.header__content {
-  padding: 34px 0px 23px;
+  margin-left: 40px;
+  font-family: "Suez One", serif;
 }
 
-.header__content-inner {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: 701px) {
+  #logo {
+    float: left;
+    width: 30%;
+    font-size: 1.1em;
+  }
+
+  #about {
+    float: right;
+    width: 67%;
+  }
 }
 
-.menu li {
-  display: inline-block;
+@media (max-width: 700px) {
+  #logo {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+  #about {
+    float: left;
+    width: 100%;
+  }
+}
+#about {
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+#about > a {
+  color: white;
+}
+#about > a:hover {
+  color: #b0b0b0;
+  text-decoration: underline;
+}
+#about > a:not(:last-child) {
+  margin-right: 7%;
+}
+.fixed {
+  z-index: 5000;
+  background-color: #fff;
+  border-bottom: 1px solid silver;
 }
 
-.menu a {
-  color: #323232;
-  font-size: 16px;
-  line-height: 36px;
-  border: 1px solid transparent;
-  padding: 0px 16px;
-  transition: all 0.3s;
+header.fixed #logo {
+  color: #343434;
 }
-.menu a:hover {
-  border-color: #ffc222;
+.fixed #about a {
+  color: #343434;
+}
+.fixed #about a:hover {
+  color: #7c7c7c;
 }
 
-.menu li + li {
-  padding-left: 10px;
+#top {
+  width: 100%;
+  background-image: url(https://storage.googleapis.com/lmo/2017/01/a0be5f8c-mackbook-on-table-showcase.jpg);
+  background-blend-mode: multiply;
+  background-color: #2e3a44;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 3em;
+}
+
+#top h1 {
+  padding-top: 20%;
+}
+
+#top h3 {
+  color: #ccc;
 }
